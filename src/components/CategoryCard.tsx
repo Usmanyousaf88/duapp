@@ -6,16 +6,18 @@ interface CategoryCardProps {
   icon: string;
   backgroundImage?: string;
   onClick?: () => void;
+  className?: string;
 }
 
-export const CategoryCard = ({ title, color, backgroundImage, onClick }: CategoryCardProps) => {
+export const CategoryCard = ({ title, color, backgroundImage, onClick, className }: CategoryCardProps) => {
   return (
     <button
       onClick={onClick}
       className={cn(
-        "w-full h-[140px] rounded-[32px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
+        "h-[140px] rounded-[32px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
         "animate-fade-in flex items-end p-6 relative overflow-hidden",
-        !backgroundImage && color
+        !backgroundImage && color,
+        className
       )}
     >
       {backgroundImage && (
