@@ -2,7 +2,7 @@ import { useState } from "react";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryCard } from "@/components/CategoryCard";
 import { TabToggle } from "@/components/TabToggle";
-import { Settings } from "lucide-react";
+import { Menu, Search, Settings } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 
 const mainCategories = [
@@ -88,17 +88,22 @@ const Index = () => {
     <div className="min-h-screen bg-white">
       <div className="fixed top-0 inset-x-0 bg-[#40C98D] z-10">
         <div className="flex items-center justify-between px-4 py-3">
-          <h1 className="text-xl font-semibold text-white">Hem</h1>
-          <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
-            <Settings className="w-5 h-5 text-white" />
+          <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
+            <Menu className="w-6 h-6 text-white" />
           </button>
-        </div>
-        <div className="px-4 pb-4">
-          <SearchBar onSearch={handleSearch} />
+          <h1 className="text-2xl font-medium text-white">Hem</h1>
+          <div className="flex items-center gap-2">
+            <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
+              <Search className="w-6 h-6 text-white" />
+            </button>
+            <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
+              <Settings className="w-6 h-6 text-white" />
+            </button>
+          </div>
         </div>
       </div>
 
-      <div className="pt-28 px-4 pb-24">
+      <div className="pt-16 px-4 pb-24">
         <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
         
         <div className="grid gap-4">
