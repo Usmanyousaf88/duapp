@@ -3,46 +3,47 @@ import { SearchBar } from "@/components/SearchBar";
 import { CategoryCard } from "@/components/CategoryCard";
 import { TabToggle } from "@/components/TabToggle";
 import { Settings } from "lucide-react";
+import { BottomNav } from "@/components/BottomNav";
 
 const mainCategories = [
   {
     title: "Morgon",
-    color: "bg-blue-50",
+    color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
   },
   {
     title: "Kväll",
-    color: "bg-orange-50",
+    color: "bg-[#FFE4D3]",
     icon: "/placeholder.svg",
   },
   {
-    title: "Före sömn",
-    color: "bg-indigo-50",
+    title: "Innan sömn",
+    color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
   },
   {
-    title: "Salah",
-    color: "bg-green-50",
+    title: "Bönen",
+    color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
   },
   {
-    title: "Efter Salah",
-    color: "bg-cyan-50",
+    title: "Efter bönen",
+    color: "bg-[#D3E4FD]",
     icon: "/placeholder.svg",
   },
   {
-    title: "Ruqyah & Sjukdom",
-    color: "bg-pink-50",
+    title: "Ruqyah & sjukdom",
+    color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
   },
   {
     title: "Allahs namn",
-    color: "bg-purple-50",
+    color: "bg-[#E5DEFF]",
     icon: "/placeholder.svg",
   },
   {
     title: "Salawat",
-    color: "bg-emerald-50",
+    color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
   },
 ];
@@ -84,10 +85,10 @@ const Index = () => {
   );
 
   return (
-    <div className="min-h-screen bg-gray-50">
-      <div className="fixed top-0 inset-x-0 bg-primary z-10">
+    <div className="min-h-screen bg-white">
+      <div className="fixed top-0 inset-x-0 bg-[#40C98D] z-10">
         <div className="flex items-center justify-between px-4 py-3">
-          <h1 className="text-xl font-semibold text-white">Dhikr & Dua</h1>
+          <h1 className="text-xl font-semibold text-white">Hem</h1>
           <button className="p-2 hover:bg-white/10 rounded-full transition-colors">
             <Settings className="w-5 h-5 text-white" />
           </button>
@@ -97,7 +98,7 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="pt-28 px-4 pb-4">
+      <div className="pt-28 px-4 pb-24">
         <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
         
         <div className="grid gap-4">
@@ -111,6 +112,8 @@ const Index = () => {
           ))}
         </div>
       </div>
+
+      <BottomNav />
     </div>
   );
 };
