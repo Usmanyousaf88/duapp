@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import { SearchBar } from "@/components/SearchBar";
 import { CategoryCard } from "@/components/CategoryCard";
 import { TabToggle } from "@/components/TabToggle";
@@ -10,7 +11,8 @@ const mainCategories = [
     title: "Morgon",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/06d4cf93-d763-48c2-abb0-ff4f7b861e89.png"
+    backgroundImage: "/lovable-uploads/06d4cf93-d763-48c2-abb0-ff4f7b861e89.png",
+    path: "/morgon"
   },
   {
     title: "Kväll",
@@ -79,6 +81,7 @@ const otherCategories = [
 const Index = () => {
   const [activeTab, setActiveTab] = useState<"main" | "other">("main");
   const [searchQuery, setSearchQuery] = useState("");
+  const navigate = useNavigate();
 
   const handleSearch = (query: string) => {
     setSearchQuery(query.toLowerCase());
@@ -119,6 +122,7 @@ const Index = () => {
               color={category.color}
               icon={category.icon}
               backgroundImage={category.backgroundImage}
+              onClick={() => category.path && navigate(category.path)}
             />
           ))}
         </div>
