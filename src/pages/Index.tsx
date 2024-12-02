@@ -6,7 +6,15 @@ import { TabToggle } from "@/components/TabToggle";
 import { Menu, Search, Settings } from "lucide-react";
 import { BottomNav } from "@/components/BottomNav";
 
-const mainCategories = [
+interface Category {
+  title: string;
+  color: string;
+  icon: string;
+  backgroundImage?: string;
+  path?: string;
+}
+
+const mainCategories: Category[] = [
   {
     title: "Morgon",
     color: "bg-[#E3F2FF]",
@@ -55,7 +63,7 @@ const mainCategories = [
   },
 ];
 
-const otherCategories = [
+const otherCategories: Category[] = [
   {
     title: "Mat & Dryck",
     color: "bg-rose-50",
