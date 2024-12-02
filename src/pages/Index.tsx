@@ -10,26 +10,31 @@ const mainCategories = [
     title: "Morgon",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/06d4cf93-d763-48c2-abb0-ff4f7b861e89.png"
   },
   {
     title: "Kväll",
     color: "bg-[#FFE4D3]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/9ec8fd58-fb12-4985-9f32-763ecdfb8eb0.png"
   },
   {
     title: "Innan sömn",
     color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/0b6e3c07-dc74-495e-afc3-e84d4cd8fdd8.png"
   },
   {
     title: "Bönen",
     color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/92159964-0425-4808-9d78-ce51505ed51b.png"
   },
   {
     title: "Efter bönen",
     color: "bg-[#D3E4FD]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/5c189f4d-0c86-408e-9466-bd19c2c68c80.png"
   },
   {
     title: "Ruqyah & sjukdom",
@@ -113,6 +118,7 @@ const Index = () => {
               title={category.title}
               color={category.color}
               icon={category.icon}
+              backgroundImage={category.backgroundImage}
             />
           ))}
         </div>
