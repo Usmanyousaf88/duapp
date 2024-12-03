@@ -14,8 +14,8 @@ export const CategoryCard = ({ title, color, backgroundImage, onClick, className
     <button
       onClick={onClick}
       className={cn(
-        "h-[140px] rounded-[32px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
-        "animate-fade-in flex items-end p-6 relative overflow-hidden",
+        "h-[100px] rounded-[24px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
+        "animate-fade-in flex items-end p-4 relative overflow-hidden",
         !backgroundImage && color,
         className
       )}
@@ -26,12 +26,12 @@ export const CategoryCard = ({ title, color, backgroundImage, onClick, className
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: 'center'
+            backgroundPosition: title === "Innan sömn" ? "center 30%" : 'center'
           }}
         />
       )}
       <div className="relative z-10">
-        <h3 className="text-base font-medium text-left text-white drop-shadow-md">{title}</h3>
+        <h3 className="text-sm font-medium text-left text-black drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">{title}</h3>
       </div>
     </button>
   );

@@ -116,26 +116,26 @@ const Index = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="fixed top-0 inset-x-0 bg-[#40C98D] z-10">
-        <div className="flex items-center justify-between px-4 py-3">
-          <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-            <Menu className="w-6 h-6 text-white" />
+        <div className="flex items-center justify-between px-4 py-2">
+          <button className="p-1.5 hover:bg-white/10 rounded-lg transition-colors">
+            <Menu className="w-5 h-5 text-white" />
           </button>
-          <h1 className="text-2xl font-medium text-white">Hem</h1>
-          <div className="flex items-center gap-2">
-            <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-              <Search className="w-6 h-6 text-white" />
+          <h1 className="text-xl font-medium text-white">Hem</h1>
+          <div className="flex items-center gap-1">
+            <button className="p-1.5 hover:bg-white/10 rounded-lg transition-colors">
+              <Search className="w-5 h-5 text-white" />
             </button>
-            <button className="p-2 hover:bg-white/10 rounded-lg transition-colors">
-              <Settings className="w-6 h-6 text-white" />
+            <button className="p-1.5 hover:bg-white/10 rounded-lg transition-colors">
+              <Settings className="w-5 h-5 text-white" />
             </button>
           </div>
         </div>
       </div>
 
-      <div className="pt-16 px-4 pb-24">
+      <div className="pt-14 px-4 pb-24">
         <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
         
-        <div className="grid grid-cols-2 gap-4">
+        <div className="grid grid-cols-2 gap-3">
           {filteredCategories.map((category, index) => (
             <CategoryCard
               key={index}
