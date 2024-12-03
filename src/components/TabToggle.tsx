@@ -5,7 +5,7 @@ interface TabToggleProps {
 
 export const TabToggle = ({ activeTab, onTabChange }: TabToggleProps) => {
   return (
-    <div className="flex p-0.5 bg-gray-100/80 backdrop-blur-sm rounded-full gap-1 mb-4 max-w-[200px] mx-auto">
+    <div className="flex p-0.5 bg-[#94DBBE] backdrop-blur-sm rounded-full gap-1 mb-4 max-w-[200px] mx-auto">
       <button
         onClick={() => onTabChange("main")}
         className={`flex-1 py-1.5 px-4 rounded-full text-sm font-medium transition-colors ${

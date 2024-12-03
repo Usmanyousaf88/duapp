@@ -26,12 +26,12 @@ export const CategoryCard = ({ title, color, backgroundImage, onClick, className
           style={{
             backgroundImage: `url(${backgroundImage})`,
             backgroundSize: 'cover',
-            backgroundPosition: title === "Innan sömn" ? "center 30%" : 'center'
+            backgroundPosition: 'center'
           }}
         />
       )}
       <div className="relative z-10">
-        <h3 className="text-sm font-medium text-left text-black drop-shadow-[0_1px_1px_rgba(255,255,255,0.8)]">{title}</h3>
+        <h3 className="text-sm font-medium text-left text-black">{title}</h3>
       </div>
     </button>
   );

@@ -62,38 +62,62 @@ const mainCategories: Category[] = [
     title: "Allahs namn",
     color: "bg-[#E5DEFF]",
     icon: "/placeholder.svg",
-    className: "col-span-2"
+    className: "col-span-1"
   },
   {
     title: "Salawat",
     color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
-    className: "col-span-2"
+    className: "col-span-1"
   },
 ];
 
 const otherCategories: Category[] = [
   {
-    title: "Mat & Dryck",
-    color: "bg-rose-50",
+    title: "Uppvaknande",
+    color: "bg-blue-50",
     icon: "/placeholder.svg",
-    className: "col-span-2"
+    className: "col-span-1"
   },
   {
-    title: "Hemmet",
+    title: "Mardrömmar",
+    color: "bg-rose-50",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Kläder",
+    color: "bg-green-50",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Toalett & Wudu",
+    color: "bg-violet-50",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Mat & Dryck",
     color: "bg-amber-50",
     icon: "/placeholder.svg",
     className: "col-span-2"
   },
   {
+    title: "Hemmet",
+    color: "bg-rose-50",
+    icon: "/placeholder.svg",
+    className: "col-span-2"
+  },
+  {
     title: "Adhan & Moské",
-    color: "bg-violet-50",
+    color: "bg-blue-50",
     icon: "/placeholder.svg",
     className: "col-span-2"
   },
   {
     title: "Istikhara",
-    color: "bg-teal-50",
+    color: "bg-green-50",
     icon: "/placeholder.svg",
     className: "col-span-2"
   },
