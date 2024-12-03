@@ -14,7 +14,7 @@ const AyatAlKursi = () => {
             </Button>
           </Link>
           <div className="flex-1 text-center mr-8">
-            <h1 className="text-lg font-medium text-white">After Waking Up #1</h1>
+            <h1 className="text-lg font-medium text-white">Ayat al-Kursi</h1>
             <div className="text-white/90 text-sm">1/2</div>
           </div>
         </div>
@@ -23,26 +23,21 @@ const AyatAlKursi = () => {
       <div className="pt-20 px-4 pb-24">
         <div className="space-y-6 bg-white rounded-lg p-6">
           <div className="text-right leading-loose text-2xl" dir="rtl">
-            الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ
+            أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّوْمُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ
           </div>
           
+          <div className="text-center text-gray-600 text-sm">(1x)</div>
+
           <div className="space-y-4">
             <div>
               <p className="text-gray-600 leading-relaxed">
-                Alhamdu li-llāhi-l-ladhī aḥyānā ba'da mā amātanā wa ilayhi-n-nushūr.
+                Allahu lâ ilâha illâ Huwal-Hayyul-Qayyûm, lâ ta´khuthuhu sinatun wa lâ nawm, lahu mâ fis-samâwâti wa mâfil-ardh, man thal-lathî yashfa'u 'indahu illâ bi'ithnih, ya'lamu mâ bayna aydîhim wa mâ khalfahum, wa lâ yuhîtûna bishay´im-min 'ilmihi illâ bimâ shâ´a, wasi'a kursiyyuhus-samâwâti wal ardha, wa lâ ya'ûduhu hifdhuhumâ, wa Huwal-'Aliyyul-'Adhîm.
               </p>
             </div>
 
             <div>
               <p className="text-gray-700 leading-relaxed">
-                All praise is for Allah Who gave us life after having taken it from us and unto Him is the resurrection.
-              </p>
-            </div>
-
-            <div className="bg-gray-50 p-4 rounded-lg">
-              <h2 className="font-medium mb-2">Hadith</h2>
-              <p className="text-sm text-gray-600 leading-relaxed">
-                Abu Dhar (rady Allāhu 'anhu) narrates that whenever the Prophet ﷺ lay on his bed, he used to say: "O Allah, solely in Your Name I die and I live," and when he woke up he would say: [the above]. (Bukhārī 6325)
+                "Allah! - det finns ingen sann gud utom Han, den Levande, skapelsens evige Vidmakthållare. Slummer överraskar Honom inte och inte heller sömn. Honom tillhör allt det som himlarna rymmer och det som jorden bär. Vem är den som vågar tala [för någon] inför Honom utan Hans tillstånd? Han vet allt vad [människor] kan veta och allt som är dolt för dem och av Hans kunskap kan de inte omfatta mer än Han tillåter. Hans fotpall omsluter himlarna och jorden. Att värna och bevara dem är för Honom ingen börda. Han är den Höge, den Väldige." [Koranen 2: 255]
               </p>
             </div>
           </div>
