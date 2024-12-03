@@ -6,6 +6,7 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import Index from "./pages/Index";
 import Morgon from "./pages/Morgon";
 import AyatAlKursi from "./pages/AyatAlKursi";
+import Emotions from "./pages/Emotions";
 
 const queryClient = new QueryClient();
 
@@ -19,6 +20,7 @@ const App = () => (
           <Route path="/" element={<Index />} />
           <Route path="/morgon" element={<Morgon />} />
           <Route path="/morgon/ayat-al-kursi" element={<AyatAlKursi />} />
+          <Route path="/kanslor" element={<Emotions />} />
         </Routes>
       </BrowserRouter>
     </TooltipProvider>

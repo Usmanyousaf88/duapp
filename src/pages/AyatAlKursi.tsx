@@ -1,6 +1,7 @@
 import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
+import { BottomNav } from "@/components/BottomNav";
 
 const AyatAlKursi = () => {
   return (
@@ -12,35 +13,70 @@ const AyatAlKursi = () => {
               <ChevronLeft className="w-6 h-6" />
             </Button>
           </Link>
-          <h1 className="text-2xl font-medium text-white ml-2">Ayat al-Kursi</h1>
+          <div className="flex-1 text-center mr-8">
+            <h1 className="text-lg font-medium text-white">After Waking Up #1</h1>
+            <div className="text-white/90 text-sm">1/2</div>
+          </div>
         </div>
       </div>
 
-      <div className="pt-16 px-4 pb-24">
-        <div className="space-y-6">
-          <div className="text-right leading-loose text-xl" dir="rtl">
-            أَعُوْذُ بِاللّٰهِ مِنَ الشَّيْطَانِ الرَّجِيْمِ. اَللّٰهُ لَآ إِلٰهَ إِلَّا هُوَ الْحَىُّ الْقَيُّوْمُ ، لَا تَأْخُذُهُۥ سِنَةٌ وَّلَا نَوْمٌ ، لَهُ مَا فِى السَّمٰـوٰتِ وَمَا فِى الْأَرْضِ ، مَنْ ذَا الَّذِىْ يَشْفَعُ عِنْدَهُ إِلَّا بِإِذْنِهِۦ ، يَعْلَمُ مَا بَيْنَ أَيْدِيْهِمْ وَمَا خَلْفَهُمْ ، وَلَا يُحِيْطُوْنَ بِشَىْءٍ مِّنْ عِلْمِهِٓ إِلَّا بِمَا شَآءَ ، وَسِعَ كُرْسِيُّهُ السَّمٰـوٰتِ وَالْأَرْضَ، وَلَا يَئُوْدُهُۥ حِفْظُهُمَا ، وَهُوَ الْعَلِىُّ الْعَظِيْمُ.
+      <div className="pt-20 px-4 pb-24">
+        <div className="space-y-6 bg-white rounded-lg p-6">
+          <div className="text-right leading-loose text-2xl" dir="rtl">
+            الْحَمْدُ لِلَّهِ الَّذِي أَحْيَانَا بَعْدَ مَا أَمَاتَنَا وَإِلَيْهِ النُّشُورُ
           </div>
           
-          <div className="text-sm text-center text-gray-600">(1x)</div>
-
           <div className="space-y-4">
             <div>
-              <h2 className="font-semibold mb-2">Translation</h2>
-              <p className="text-gray-700 leading-relaxed">
-                I seek the protection of Allah from the accursed Shayṭān. Allah, there is no god worthy of worship but He, the Ever Living, The Sustainer of all. Neither drowsiness overtakes Him nor sleep. To Him Alone belongs whatever is in the heavens and whatever is on the earth. Who is it that can intercede with Him except with His permission? He knows what is before them and what will be after them, and they encompass not a thing of His knowledge except for what He wills. His Kursī extends over the heavens and the earth, and their preservation does not tire Him. And He is the Most High, the Magnificent. (2:255)
+              <p className="text-gray-600 leading-relaxed">
+                Alhamdu li-llāhi-l-ladhī aḥyānā ba'da mā amātanā wa ilayhi-n-nushūr.
               </p>
             </div>
 
             <div>
-              <h2 className="font-semibold mb-2">Transliteration</h2>
               <p className="text-gray-700 leading-relaxed">
-                Aʿūdhu bi-llāhi mina-sh-Shayṭāni-r-rajīm. Allāhu lā ilāha illā Huwa-l-Ḥayyu-l-Qayyūm, lā ta'khudhuhū sinatuw-wa lā nawm, lahū mā fi-s-samāwāti wa mā fi-l-arḍ, man dhā'lladhī yashfaʿu ʿindahū illā bi-idhnih, yaʿlamu mā bayna aydīhim wa mā khalfahum, wa lā yuḥīṭūna bi-shay'im-min ʿilmihī illā bi-mā shā', wasiʿa kursiyyuhu-s-samāwāti wa-l-arḍ, wa lā ya'ūduhū ḥifẓuhumā wa Huwa-l-ʿAlliyu-l-ʿAẓīm.
+                All praise is for Allah Who gave us life after having taken it from us and unto Him is the resurrection.
+              </p>
+            </div>
+
+            <div className="bg-gray-50 p-4 rounded-lg">
+              <h2 className="font-medium mb-2">Hadith</h2>
+              <p className="text-sm text-gray-600 leading-relaxed">
+                Abu Dhar (rady Allāhu 'anhu) narrates that whenever the Prophet ﷺ lay on his bed, he used to say: "O Allah, solely in Your Name I die and I live," and when he woke up he would say: [the above]. (Bukhārī 6325)
               </p>
             </div>
           </div>
         </div>
       </div>
+
+      <div className="fixed bottom-16 inset-x-0 p-4 flex justify-center space-x-8">
+        <button className="p-2 rounded-full hover:bg-gray-100">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <circle cx="12" cy="12" r="10"/>
+            <line x1="12" y1="16" x2="12" y2="12"/>
+            <line x1="12" y1="8" x2="12.01" y2="8"/>
+          </svg>
+        </button>
+        <button className="p-2 rounded-full bg-[#40C98D] text-white">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <polygon points="5 3 19 12 5 21 5 3"/>
+          </svg>
+        </button>
+        <button className="p-2 rounded-full hover:bg-gray-100">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M4 12v8a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2v-8"/>
+            <polyline points="16 6 12 2 8 6"/>
+            <line x1="12" y1="2" x2="12" y2="15"/>
+          </svg>
+        </button>
+        <button className="p-2 rounded-full hover:bg-gray-100">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </button>
+      </div>
+
+      <BottomNav />
     </div>
   );
 };
