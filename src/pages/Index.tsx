@@ -17,7 +17,7 @@ interface Category {
 
 const mainCategories: Category[] = [
   {
-    title: "Du'as för Ummah",
+    title: "Du'a för Ummah",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/2521214c-6395-43dd-adfd-020a2e8a17f1.png",
@@ -63,13 +63,14 @@ const mainCategories: Category[] = [
     title: "Ruqyah & sjukdom",
     color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/65cb81c2-5564-4dd3-85d8-4341d487c0df.png",
+    backgroundImage: "/lovable-uploads/99e75aa1-00c2-4e17-9cc6-40bbea0a9a88.png",
     className: "col-span-2"
   },
   {
     title: "Prisning till Allah",
     color: "bg-[#E5DEFF]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/31ad7e12-e1ab-4362-bce1-f3ccf36ca781.png",
     className: "col-span-1"
   },
   {
@@ -83,6 +84,7 @@ const mainCategories: Category[] = [
     title: "Du'as från Koranen",
     color: "bg-[#F2FCE2]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/14bbd60d-3d56-47ac-bf93-0eaf660ba57c.png",
     className: "col-span-1"
   },
   {
@@ -101,12 +103,14 @@ const mainCategories: Category[] = [
     title: "Istighfar",
     color: "bg-[#FFDEE2]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/f10b135e-e2f8-4f57-8f73-6ad9aa39617d.png",
     className: "col-span-1"
   },
   {
     title: "Allah's namn",
     color: "bg-[#D3E4FD]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/1748109d-6ac2-4c25-9c8e-bbfa6f00753e.png",
     className: "col-span-2"
   },
 ];
