@@ -27,7 +27,7 @@ const mainCategories: Category[] = [
     title: "Morgon",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/06d4cf93-d763-48c2-abb0-ff4f7b861e89.png",
+    backgroundImage: "/lovable-uploads/f9088ba9-f25e-4a89-b56d-b5be93f674cd.png",
     path: "/morgon",
     className: "col-span-2"
   },
@@ -35,14 +35,14 @@ const mainCategories: Category[] = [
     title: "Kväll",
     color: "bg-[#FFE4D3]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/9ec8fd58-fb12-4985-9f32-763ecdfb8eb0.png",
+    backgroundImage: "/lovable-uploads/fc55e661-a5e9-40d9-8e2d-59e15ec9a008.png",
     className: "col-span-2"
   },
   {
     title: "Innan sömn",
     color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/0b6e3c07-dc74-495e-afc3-e84d4cd8fdd8.png",
+    backgroundImage: "/lovable-uploads/b91d8cc3-9a73-432d-b0ca-70eb113ff25c.png",
     className: "col-span-2"
   },
   {
@@ -63,6 +63,7 @@ const mainCategories: Category[] = [
     title: "Ruqyah & sjukdom",
     color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/65cb81c2-5564-4dd3-85d8-4341d487c0df.png",
     className: "col-span-2"
   },
   {
@@ -75,6 +76,7 @@ const mainCategories: Category[] = [
     title: "Salawat",
     color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/c41f4c53-0d1f-43dc-9ace-ab6fe1bed6e9.png",
     className: "col-span-1"
   },
   {
@@ -193,21 +195,23 @@ const Index = () => {
         </div>
       </div>
 
-      <div className="pt-14 px-4 pb-24">
-        <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
-        
-        <div className="grid grid-cols-2 gap-3 h-[calc(100vh-14rem)] overflow-y-auto">
-          {filteredCategories.map((category, index) => (
-            <CategoryCard
-              key={index}
-              title={category.title}
-              color={category.color}
-              icon={category.icon}
-              backgroundImage={category.backgroundImage}
-              onClick={() => category.path && navigate(category.path)}
-              className={category.className}
-            />
-          ))}
+      <div className="pt-14 pb-16">
+        <div className="px-4">
+          <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
+          
+          <div className="grid grid-cols-2 gap-3 h-[calc(100vh-14rem)] overflow-y-auto">
+            {filteredCategories.map((category, index) => (
+              <CategoryCard
+                key={index}
+                title={category.title}
+                color={category.color}
+                icon={category.icon}
+                backgroundImage={category.backgroundImage}
+                onClick={() => category.path && navigate(category.path)}
+                className={category.className}
+              />
+            ))}
+          </div>
         </div>
       </div>
 
