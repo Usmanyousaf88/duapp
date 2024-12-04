@@ -48,7 +48,7 @@ export const mainCategories: Category[] = [
     title: "Ruqyah & sjukdom",
     color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/d369c1ad-43fb-48d2-b409-651cc676b7c8.png",
+    backgroundImage: "/lovable-uploads/bddafbae-092e-4836-80c4-4016050d204d.png",
     className: "col-span-2"
   },
   {
@@ -69,14 +69,14 @@ export const mainCategories: Category[] = [
     title: "Du'as från Koranen",
     color: "bg-[#F2FCE2]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/14bbd60d-3d56-47ac-bf93-0eaf660ba57c.png",
+    backgroundImage: "/lovable-uploads/5ad3029e-32c4-4173-8bd7-782b8be70609.png",
     className: "col-span-1"
   },
   {
     title: "Du'as från Sunnah",
     color: "bg-[#FEF7CD]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/097588d6-dd0e-45f7-ada3-7b01d7fbc8bf.png",
+    backgroundImage: "/lovable-uploads/5d41224f-e0e0-4839-a138-5e882aefb0a5.png",
     className: "col-span-1"
   },
   {
