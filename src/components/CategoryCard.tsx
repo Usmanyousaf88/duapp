@@ -14,7 +14,7 @@ export const CategoryCard = ({ title, color, backgroundImage, onClick, className
     <button
       onClick={onClick}
       className={cn(
-        "h-[100px] rounded-[24px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
+        "h-[140px] rounded-[24px] transition-transform hover:scale-[1.02] active:scale-[0.98]",
         "animate-fade-in flex items-end p-4 relative overflow-hidden",
         !backgroundImage && color,
         className

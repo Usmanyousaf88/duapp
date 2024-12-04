@@ -17,6 +17,13 @@ interface Category {
 
 const mainCategories: Category[] = [
   {
+    title: "Du'as för Ummah",
+    color: "bg-[#E3F2FF]",
+    icon: "/placeholder.svg",
+    backgroundImage: "/lovable-uploads/2521214c-6395-43dd-adfd-020a2e8a17f1.png",
+    className: "col-span-2"
+  },
+  {
     title: "Morgon",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
@@ -59,7 +66,7 @@ const mainCategories: Category[] = [
     className: "col-span-2"
   },
   {
-    title: "Allahs namn",
+    title: "Prisning till Allah",
     color: "bg-[#E5DEFF]",
     icon: "/placeholder.svg",
     className: "col-span-1"
@@ -69,6 +76,36 @@ const mainCategories: Category[] = [
     color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
     className: "col-span-1"
+  },
+  {
+    title: "Du'as från Koranen",
+    color: "bg-[#F2FCE2]",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Du'as från Sunnah",
+    color: "bg-[#FEF7CD]",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Dhikr för allt",
+    color: "bg-[#FEC6A1]",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Istighfar",
+    color: "bg-[#FFDEE2]",
+    icon: "/placeholder.svg",
+    className: "col-span-1"
+  },
+  {
+    title: "Allah's namn",
+    color: "bg-[#D3E4FD]",
+    icon: "/placeholder.svg",
+    className: "col-span-2"
   },
 ];
 
@@ -159,7 +196,7 @@ const Index = () => {
       <div className="pt-14 px-4 pb-24">
         <TabToggle activeTab={activeTab} onTabChange={setActiveTab} />
         
-        <div className="grid grid-cols-2 gap-3">
+        <div className="grid grid-cols-2 gap-3 h-[calc(100vh-14rem)] overflow-y-auto">
           {filteredCategories.map((category, index) => (
             <CategoryCard
               key={index}
