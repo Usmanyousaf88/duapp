@@ -30,7 +30,7 @@ export const CategoryCard = ({ title, color, backgroundImage, onClick, className
           }}
         />
       )}
-      <div className="relative z-10">
+      <div className="relative z-10 mb-2">
         <h3 className="text-sm font-medium text-left text-black">{title}</h3>
       </div>
     </button>
