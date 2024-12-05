@@ -1,4 +1,4 @@
-import { Home, Heart, Smile, Calendar } from "lucide-react";
+import { Home, Heart, Smile } from "lucide-react";
 import { Link, useLocation } from "react-router-dom";
 
 export const BottomNav = () => {
@@ -20,9 +20,9 @@ export const BottomNav = () => {
           <Smile className="w-6 h-6" />
           <span className="text-xs">Känslor</span>
         </Link>
-        <Link to="/paminnelser" className="flex flex-col items-center space-y-1">
-          <Calendar className="w-6 h-6" />
-          <span className="text-xs">Påminnelser</span>
+        <Link to="/tasbih" className="flex flex-col items-center space-y-1">
+          <img src="/lovable-uploads/3a580410-6bd1-4b2b-b69c-2891932d66e8.png" alt="Tasbih" className="w-6 h-6" />
+          <span className="text-xs">Tasbih</span>
         </Link>
       </div>
     </nav>

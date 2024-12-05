@@ -27,7 +27,7 @@ export const mainCategories: Category[] = [
     title: "Innan sömn",
     color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/b91d8cc3-9a73-432d-b0ca-70eb113ff25c.png",
+    backgroundImage: "/lovable-uploads/13df4b61-4aa3-44a9-b03d-d57426245fb6.png",
     className: "col-span-2"
   },
   {
@@ -48,7 +48,7 @@ export const mainCategories: Category[] = [
     title: "Ruqyah & sjukdom",
     color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/bddafbae-092e-4836-80c4-4016050d204d.png",
+    backgroundImage: "/lovable-uploads/19444db6-aafe-4466-840f-847a788fb633.png",
     className: "col-span-2"
   },
   {
@@ -76,7 +76,7 @@ export const mainCategories: Category[] = [
     title: "Du'as från Sunnah",
     color: "bg-[#FEF7CD]",
     icon: "/placeholder.svg",
-    backgroundImage: "/lovable-uploads/5d41224f-e0e0-4839-a138-5e882aefb0a5.png",
+    backgroundImage: "/lovable-uploads/8ab314a6-c280-4a5e-86cb-2721e74fb042.png",
     className: "col-span-1"
   },
   {

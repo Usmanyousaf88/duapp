@@ -7,6 +7,7 @@ import Index from "./pages/Index";
 import Morgon from "./pages/Morgon";
 import AyatAlKursi from "./pages/AyatAlKursi";
 import Emotions from "./pages/Emotions";
+import Tasbih from "./pages/Tasbih";
 
 const queryClient = new QueryClient();
 
@@ -21,6 +22,7 @@ const App = () => (
           <Route path="/morgon" element={<Morgon />} />
           <Route path="/morgon/ayat-al-kursi" element={<AyatAlKursi />} />
           <Route path="/kanslor" element={<Emotions />} />
+          <Route path="/tasbih" element={<Tasbih />} />
           <Route path="*" element={<Navigate to="/" replace />} />
         </Routes>
       </BrowserRouter>
