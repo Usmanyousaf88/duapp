@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { RefreshCw, Volume2 } from "lucide-react";
+import { ArrowLeft, RefreshCw, Volume2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Tasbih = () => {
