@@ -1,10 +1,17 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import { ArrowLeft, RefreshCw, Volume2 } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Tasbih = () => {
   const [count, setCount] = useState(0);
-  const [totalCount, setTotalCount] = useState(33);
+  const [totalCount, setTotalCount] = useState(() => {
+    const savedTotal = localStorage.getItem('tasbihTotal');
+    return savedTotal ? parseInt(savedTotal) : 0;
+  });
+
+  useEffect(() => {
+    localStorage.setItem('tasbihTotal', totalCount.toString());
+  }, [totalCount]);
 
   const handleTap = () => {
     setCount(prev => prev + 1);
