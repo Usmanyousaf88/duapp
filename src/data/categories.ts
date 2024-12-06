@@ -2,57 +2,57 @@ import { Category } from "@/types/Category";
 
 export const mainCategories: Category[] = [
   {
-    title: "Du'a för Ummah",
+    title: "Du'a for Ummah",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/2521214c-6395-43dd-adfd-020a2e8a17f1.png",
     className: "col-span-2"
   },
   {
-    title: "Morgon",
+    title: "Morning",
     color: "bg-[#E3F2FF]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/f9088ba9-f25e-4a89-b56d-b5be93f674cd.png",
-    path: "/morgon",
+    path: "/morning",
     className: "col-span-2"
   },
   {
-    title: "Kväll",
+    title: "Evening",
     color: "bg-[#FFE4D3]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/fc55e661-a5e9-40d9-8e2d-59e15ec9a008.png",
     className: "col-span-2"
   },
   {
-    title: "Innan sömn",
+    title: "Before Sleep",
     color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/13df4b61-4aa3-44a9-b03d-d57426245fb6.png",
     className: "col-span-2"
   },
   {
-    title: "Bönen",
+    title: "Prayer",
     color: "bg-[#D1E7DD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/92159964-0425-4808-9d78-ce51505ed51b.png",
     className: "col-span-1"
   },
   {
-    title: "Efter bönen",
+    title: "After Prayer",
     color: "bg-[#D3E4FD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/5c189f4d-0c86-408e-9466-bd19c2c68c80.png",
     className: "col-span-1"
   },
   {
-    title: "Ruqyah & sjukdom",
+    title: "Ruqyah & Illness",
     color: "bg-[#FFE4E6]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/19444db6-aafe-4466-840f-847a788fb633.png",
     className: "col-span-2"
   },
   {
-    title: "Prisning till Allah",
+    title: "Praising Allah",
     color: "bg-[#E5DEFF]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/31ad7e12-e1ab-4362-bce1-f3ccf36ca781.png",
@@ -66,21 +66,21 @@ export const mainCategories: Category[] = [
     className: "col-span-1"
   },
   {
-    title: "Du'as från Koranen",
+    title: "Du'as from Quran",
     color: "bg-[#F2FCE2]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/5ad3029e-32c4-4173-8bd7-782b8be70609.png",
     className: "col-span-1"
   },
   {
-    title: "Du'as från Sunnah",
+    title: "Du'as from Sunnah",
     color: "bg-[#FEF7CD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/8ab314a6-c280-4a5e-86cb-2721e74fb042.png",
     className: "col-span-1"
   },
   {
-    title: "Dhikr för allt",
+    title: "Dhikr for All",
     color: "bg-[#FEC6A1]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/cd18b7d7-1235-4e02-b58c-2641251477e3.png",
@@ -94,7 +94,7 @@ export const mainCategories: Category[] = [
     className: "col-span-1"
   },
   {
-    title: "Allah's namn",
+    title: "Names of Allah",
     color: "bg-[#D3E4FD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/1748109d-6ac2-4c25-9c8e-bbfa6f00753e.png",
@@ -104,43 +104,43 @@ export const mainCategories: Category[] = [
 
 export const otherCategories: Category[] = [
   {
-    title: "Uppvaknande",
+    title: "Waking Up",
     color: "bg-blue-100",
     icon: "/placeholder.svg",
     className: "col-span-1"
   },
   {
-    title: "Mardrömmar",
+    title: "Nightmares",
     color: "bg-rose-100",
     icon: "/placeholder.svg",
     className: "col-span-1"
   },
   {
-    title: "Kläder",
+    title: "Clothing",
     color: "bg-green-100",
     icon: "/placeholder.svg",
     className: "col-span-1"
   },
   {
-    title: "Toalett & Wudu",
+    title: "Toilet & Wudu",
     color: "bg-violet-100",
     icon: "/placeholder.svg",
     className: "col-span-1"
   },
   {
-    title: "Mat & Dryck",
+    title: "Food & Drink",
     color: "bg-amber-100",
     icon: "/placeholder.svg",
     className: "col-span-2"
   },
   {
-    title: "Hemmet",
+    title: "Home",
     color: "bg-rose-100",
     icon: "/placeholder.svg",
     className: "col-span-2"
   },
   {
-    title: "Adhan & Moské",
+    title: "Adhan & Mosque",
     color: "bg-blue-100",
     icon: "/placeholder.svg",
     className: "col-span-2"

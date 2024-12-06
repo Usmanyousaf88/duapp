@@ -14,7 +14,7 @@ export const TabToggle = ({ activeTab, onTabChange }: TabToggleProps) => {
             : "text-gray-600 hover:text-gray-900"
         }`}
       >
-        Huvudmeny
+        Main Menu
       </button>
       <button
         onClick={() => onTabChange("other")}
@@ -24,7 +24,7 @@ export const TabToggle = ({ activeTab, onTabChange }: TabToggleProps) => {
             : "text-gray-600 hover:text-gray-900"
         }`}
       >
-        Övrigt
+        Other
       </button>
     </div>
   );

@@ -13,7 +13,7 @@ const Emotions = () => {
               <ChevronLeft className="w-6 h-6" />
             </Button>
           </Link>
-          <h1 className="text-2xl font-medium text-white ml-2">Känslor</h1>
+          <h1 className="text-2xl font-medium text-white ml-2">Emotions</h1>
         </div>
       </div>
 
@@ -36,18 +36,18 @@ const Emotions = () => {
 };
 
 const emotions = [
-  "Arg",
-  "Ledsen",
-  "Rädd",
-  "Orolig",
-  "Stressad",
-  "Ångest",
-  "Ensam",
-  "Svartsjuk",
-  "Besviken",
-  "Förvirrad",
-  "Skamsen",
-  "Sårad"
+  "Angry",
+  "Sad",
+  "Scared",
+  "Worried",
+  "Stressed",
+  "Anxious",
+  "Lonely",
+  "Jealous",
+  "Disappointed",
+  "Confused",
+  "Ashamed",
+  "Hurt"
 ];
 
 export default Emotions;

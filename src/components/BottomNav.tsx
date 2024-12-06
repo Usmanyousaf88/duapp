@@ -16,16 +16,16 @@ export const BottomNav = () => {
               alt="Mosque" 
               className="w-5 h-5 mb-1" 
             />
-            <span className={`text-xs ${isHomePage ? "text-[#40C98D]" : ""}`}>Hem</span>
+            <span className={`text-xs ${isHomePage ? "text-[#40C98D]" : ""}`}>Home</span>
           </div>
         </Link>
-        <Link to="/favoriter" className="flex flex-col items-center space-y-1">
+        <Link to="/favorites" className="flex flex-col items-center space-y-1">
           <Heart className="w-6 h-6" />
-          <span className="text-xs">Favoriter</span>
+          <span className="text-xs">Favorites</span>
         </Link>
-        <Link to="/kanslor" className="flex flex-col items-center space-y-1">
+        <Link to="/emotions" className="flex flex-col items-center space-y-1">
           <Smile className="w-6 h-6" />
-          <span className="text-xs">Känslor</span>
+          <span className="text-xs">Emotions</span>
         </Link>
         <Link to="/tasbih" className="flex flex-col items-center space-y-1">
           <img 
