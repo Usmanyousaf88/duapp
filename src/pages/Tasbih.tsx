@@ -8,6 +8,7 @@ const Tasbih = () => {
     const savedTotal = localStorage.getItem('tasbihTotal');
     return savedTotal ? parseInt(savedTotal) : 0;
   });
+  const [isAnimating, setIsAnimating] = useState(false);
 
   useEffect(() => {
     localStorage.setItem('tasbihTotal', totalCount.toString());
@@ -16,6 +17,15 @@ const Tasbih = () => {
   const handleTap = () => {
     setCount(prev => prev + 1);
     setTotalCount(prev => prev + 1);
+    
+    // Trigger vibration if supported
+    if (navigator.vibrate) {
+      navigator.vibrate(50);
+    }
+    
+    // Trigger animation
+    setIsAnimating(true);
+    setTimeout(() => setIsAnimating(false), 200);
   };
 
   const handleReset = () => {
@@ -51,7 +61,9 @@ const Tasbih = () => {
 
         <button
           onClick={handleTap}
-          className="w-64 h-64 mx-auto mt-32 rounded-full border-[12px] border-gray-100 flex items-center justify-center text-gray-400 text-xl"
+          className={`w-64 h-64 mx-auto mt-32 rounded-full border-[12px] border-gray-100 flex items-center justify-center text-[#4EC492] text-xl transition-all duration-200 ${
+            isAnimating ? 'bg-[#4EC492]/10' : ''
+          }`}
         >
           {count === 0 ? "Tap Here" : count}
         </button>

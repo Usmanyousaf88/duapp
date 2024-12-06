@@ -15,7 +15,7 @@ export const CategoryGrid = ({ categories, searchQuery }: CategoryGridProps) => 
   );
 
   return (
-    <div className="grid grid-cols-2 gap-3 pb-16 overflow-y-auto">
+    <div className="grid grid-cols-2 gap-3 pt-20 pb-24 overflow-y-auto">
       {filteredCategories.map((category, index) => (
         <CategoryCard
           key={index}
