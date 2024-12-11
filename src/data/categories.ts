@@ -28,6 +28,7 @@ export const mainCategories: Category[] = [
     color: "bg-[#2B7BAD]",
     icon: "/placeholder.svg",
     backgroundImage: "/lovable-uploads/13df4b61-4aa3-44a9-b03d-d57426245fb6.png",
+    path: "/before-sleep",
     className: "col-span-2"
   },
   {
