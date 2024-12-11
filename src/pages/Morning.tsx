@@ -2,7 +2,7 @@ import { Button } from "@/components/ui/button";
 import { ChevronLeft } from "lucide-react";
 import { Link } from "react-router-dom";
 
-const Morgon = () => {
+const Morning = () => {
   return (
     <div className="min-h-screen bg-white">
       <div className="fixed top-0 inset-x-0 bg-[#40C98D] z-10">
@@ -12,13 +12,13 @@ const Morgon = () => {
               <ChevronLeft className="w-6 h-6" />
             </Button>
           </Link>
-          <h1 className="text-2xl font-medium text-white ml-2">Morgon</h1>
+          <h1 className="text-2xl font-medium text-white ml-2">Morning</h1>
         </div>
       </div>
 
       <div className="pt-16 px-4 pb-24">
         <div className="space-y-4">
-          <Link to="/morgon/ayat-al-kursi" className="block">
+          <Link to="/morning/ayat-al-kursi" className="block">
             <div className="p-4 bg-white rounded-lg shadow-sm border">
               <div className="flex items-center gap-4">
                 <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
@@ -28,10 +28,55 @@ const Morgon = () => {
               </div>
             </div>
           </Link>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm border">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
+                2
+              </div>
+              <h2 className="text-lg font-medium">Last 3 Surahs (Al-Ikhlas, Al-Falaq, An-Nas)</h2>
+            </div>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm border">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
+                3
+              </div>
+              <h2 className="text-lg font-medium">Sayyidul Istighfar</h2>
+            </div>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm border">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
+                4
+              </div>
+              <h2 className="text-lg font-medium">Morning Remembrance (Adhkar)</h2>
+            </div>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm border">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
+                5
+              </div>
+              <h2 className="text-lg font-medium">Protection Du'as</h2>
+            </div>
+          </div>
+
+          <div className="p-4 bg-white rounded-lg shadow-sm border">
+            <div className="flex items-center gap-4">
+              <div className="w-8 h-8 bg-[#40C98D] rounded-full flex items-center justify-center text-white">
+                6
+              </div>
+              <h2 className="text-lg font-medium">Seeking Blessings for the Day</h2>
+            </div>
+          </div>
         </div>
       </div>
     </div>
   );
 };
 
-export default Morgon;
+export default Morning;
